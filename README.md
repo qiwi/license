@@ -1,0 +1,2 @@
+# license
+QIWI OSS License
