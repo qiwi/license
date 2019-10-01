@@ -46,5 +46,6 @@ generate({
 |--------------|-------------|---------|
 | `year`       | Sets year | Current `.getFullYear()` |
 | `lang`       | Text language | `en` |
-| `name`       | License file name | `LICENSE` |
-| `dir`        | License file dir | Project root |
+| `file`       | License file name | `LICENSE` |
+| `dir`        | License target dir | Project root |
+| `name`       | Project name | `name` from `package.json` |

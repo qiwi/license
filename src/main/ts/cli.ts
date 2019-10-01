@@ -9,7 +9,7 @@ export const cli = meow(`
     --year, -y    Defines license year
     --lang, -l    Specifies license test language
     --file, -f    License file name
-    --dir,  -d    License directory
+    --dir,  -d    License target directory
     --name, -n    Software name
 
   Examples
