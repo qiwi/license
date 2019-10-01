@@ -1,6 +1,7 @@
-import {render, generate} from '../../main/ts'
 import {resolve} from 'path'
 import {readFileSync} from 'fs'
+import {sync as execaSync} from 'execa'
+import {render, generate} from '../../main/ts'
 import {TLanguage} from '../../main/ts/interface'
 
 describe('index', () => {
@@ -34,5 +35,28 @@ describe('index', () => {
 
       expect(readFileSync(filePath, 'utf-8').includes(year)).toBeTruthy()
     })
+  })
+})
+
+describe('bin', () => {
+  it('parses CLI flags and creates license file', async () => {
+    const year = '2010-2019' + Math.random()
+    const dir = resolve(__dirname, '../tmp')
+    const lang = TLanguage.RU
+    const name = 'licFromCli'
+    const filePath = resolve(dir, name)
+
+    await execaSync(process.execPath,[
+      './target/es5/cli.js',
+      '-l', lang,
+      '--dir', dir,
+      `--name=${name}`,
+      '--year', year,
+    ])
+
+    const result = readFileSync(filePath, 'utf-8')
+
+    expect(result.includes(year)).toBeTruthy()
+    expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
   })
 })

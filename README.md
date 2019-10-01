@@ -12,5 +12,5 @@ npm i @qiwi/license
 
 ## Usage
 ```bash
-qiwilicense path
+qiwilicense name='LICENSE' dir=/some/path lang=ru year=2019
 ```
