@@ -1,4 +1,4 @@
-# QIWI OSS License
+# QIWI Open Source License
 [![Build Status](https://travis-ci.com/qiwi/license.svg?branch=master)](https://travis-ci.com/qiwi/license)
 [![npm (tag)](https://img.shields.io/npm/v/@qiwi/license/latest.svg)](https://www.npmjs.com/package/@qiwi/license)
 [![dependencyStatus](https://img.shields.io/david/qiwi/license.svg?maxAge=300)](https://david-dm.org/qiwi/license)
@@ -12,8 +12,8 @@
 
 ## Install
 ```bash
-yarn add @qiwi/license
-npm i @qiwi/license
+yarn add @qiwi/license -D
+npm add @qiwi/license -D
 ```
 
 ## Usage
@@ -26,13 +26,13 @@ TS/JS
 ```javascript
 import {generate, render} from '@qiwi/license'
 
+// Get the text and do something next
 const text = render({
   lang: 'ru',
   year: '2010-2019'
 })
-// ... do something
 
-// Or render and write to a file:
+// Or just write to a file:
 generate({
   name: 'LIC',
   dir: resolve(__dirname, '../foo/bar'),
