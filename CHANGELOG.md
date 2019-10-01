@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/qiwi/license/compare/v1.0.0...v1.0.1) (2019-10-01)
+
+
+### Bug Fixes
+
+* export lib ifaces ([04d304d](https://github.com/qiwi/license/commit/04d304d))
+
 # 1.0.0 (2019-10-01)
 
 

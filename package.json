@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/license",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "QIWI OSS License",
   "source": "src/main/ts/index.ts",
   "bin": {
