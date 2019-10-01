@@ -23,7 +23,8 @@
     "lint:fix": "yarn lint --fix",
     "test": "yarn lint && yarn jest",
     "clean": "rimraf target typings",
-    "build": "yarn clean && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef && yarn docs && yarn uglify && yarn build:bundle",
+    "build": "yarn clean && yarn build:tpl && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef && yarn docs && yarn uglify && yarn build:bundle",
+    "build:tpl": "mkdir -p target/tpl && cp -r src/main/tpl/ \"$_\"",
     "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.es5.json",
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.es6.json",
     "build:ts": "cp -r src/main/ts/ target/ts/",
@@ -54,6 +55,8 @@
   "homepage": "https://github.com/qiwi/license#readme",
   "dependencies": {
     "@qiwi/substrate": "^1.11.2",
+    "@types/lodash": "^4.14.141",
+    "find-git-root": "^1.0.2",
     "lodash": "^4.17.15",
     "tslib": "^1.10.0"
   },

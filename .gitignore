@@ -47,6 +47,7 @@ typings
 
 # Temp
 temp
+tmp
 *.tmp
 
 # Typescript

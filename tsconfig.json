@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
     "rootDir": "./src/main/ts/",
     "baseUrl": "./src/main/ts/",
     "moduleResolution": "node",
