@@ -8,12 +8,13 @@ export const cli = meow(`
   Options
     --year, -y    Defines license year
     --lang, -l    Specifies license test language
-    --name, -n    License file name
-    --dir,  -d    License file directory
+    --file, -f    License file name
+    --dir,  -d    License directory
+    --name, -n    Software name
 
   Examples
     $ qiwilicense --year=2020 --dir=/Users/foo/bar
-    $ qiwilicense -l en -n lic
+    $ qiwilicense -l en -f lic -n Pijma
 `, {
   flags: {
     lang: {
@@ -27,6 +28,10 @@ export const cli = meow(`
     dir: {
       type: 'string',
       alias: 'd',
+    },
+    file: {
+      type: 'string',
+      alias: 'f',
     },
     name: {
       type: 'string',

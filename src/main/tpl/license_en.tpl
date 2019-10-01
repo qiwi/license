@@ -7,7 +7,7 @@ QIWI JSC
 <%= year %>
 
 According to Art. 1286.1 of the Civil Code of the Russian Federation,
-the Licensor provides an open license for the software product “__________”
+the Licensor provides an open license for the software product “<%= name %>”
 and related associated documentationfiles (hereinafter referred to as the “Software”).
 
 Permission is hereby granted, free of charge, to any person obtaining
