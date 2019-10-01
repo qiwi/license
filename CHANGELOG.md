@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/qiwi/license/compare/v1.0.2...v1.0.3) (2019-10-01)
+
+
+### Bug Fixes
+
+* correct some typos ([546b41c](https://github.com/qiwi/license/commit/546b41c))
+
 ## [1.0.2](https://github.com/qiwi/license/compare/v1.0.1...v1.0.2) (2019-10-01)
 
 
