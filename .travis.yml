@@ -17,6 +17,7 @@ install:
 
 script:
   - yarn run build
+  - chmod -R 777 ./target
   - yarn test:report
 
 deploy:
