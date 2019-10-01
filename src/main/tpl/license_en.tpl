@@ -4,7 +4,7 @@ Licensor:
 QIWI JSC
 (TIN 7707510721)
 
-___________ ___, 20___
+<%= year %>
 
 According to Art. 1286.1 of the Civil Code of the Russian Federation, the Licensor provides an open license for the software product “__________” and related associated documentation files (hereinafter referred to as the “Software”).
 
