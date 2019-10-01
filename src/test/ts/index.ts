@@ -1,5 +1,6 @@
 import {resolve} from 'path'
 import {readFileSync} from 'fs'
+//import {exec} from 'child_process'
 import {sync as execaSync} from 'execa'
 import {render, generate} from '../../main/ts'
 import {TLanguage} from '../../main/ts/interface'
@@ -23,12 +24,12 @@ describe('index', () => {
     it('creates / updates target file with license', () => {
       const year = '2010-2019' + Math.random()
       const dir = resolve(__dirname, '../tmp')
-      const name = 'lic'
-      const filePath = resolve(dir, name)
+      const file = 'lic'
+      const filePath = resolve(dir, file)
 
       generate({
         lang: TLanguage.EN,
-        name,
+        file,
         dir,
         year,
       })
@@ -43,20 +44,28 @@ describe('bin', () => {
     const year = '2010-2019' + Math.random()
     const dir = resolve(__dirname, '../tmp')
     const lang = TLanguage.RU
-    const name = 'licFromCli'
-    const filePath = resolve(dir, name)
+    const file = 'licFromCli'
+    const filePath = resolve(dir, file)
+    const name = 'FOO'
 
-    execaSync(process.execPath,[
+    const args = [
       './target/es5/cli.js',
       '-l', lang,
       '--dir', dir,
-      `--name=${name}`,
+      `--file=${file}`,
       '--year', year,
-    ])
+      '-n', name,
+    ]
+
+    // const cmd = `node ${args.join(' ')}`
+
+    execaSync(process.execPath, args)
 
     const result = readFileSync(filePath, 'utf-8')
 
     expect(result.includes(year)).toBeTruthy()
     expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
+    expect(result.includes('FOO')).toBeTruthy()
+
   })
 })
