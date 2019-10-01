@@ -38,7 +38,7 @@ will be deemed to be the performance by the Licensee of such actions
 that are aimed at fulfilling the conditions (rights and obligations) included in
 the Agreement, including pressing the “Clone or Download” button located in the
 interfaces of the relevant sections on the website https://github.com/qiwi/
-in the Internet telecommunication network, recording/saving/ downloading
+in the Internet telecommunication network, recording/saving/downloading
 the Software (file containing it) into the memory of a computer or other
 technical device (including a mobile phone, smartphone, tablet computer),
 use, copying and/or maintaining the code (part of the code) of the Software
