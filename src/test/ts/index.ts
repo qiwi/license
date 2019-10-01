@@ -1,7 +1,6 @@
 import {resolve} from 'path'
 import {readFileSync} from 'fs'
-// import {exec} from 'child_process'
-import {sync as execaSync} from 'execa'
+import {exec} from 'child_process'
 import {render, generate} from '../../main/ts'
 import {TLanguage} from '../../main/ts/interface'
 
@@ -40,7 +39,7 @@ describe('index', () => {
 })
 
 describe('bin', () => {
-  it('parses CLI flags and creates license file', () => {
+  it('parses CLI flags and creates license file', (done) => {
     const year = '2010-2019' + Math.random()
     const dir = resolve(__dirname, '../tmp')
     const lang = TLanguage.RU
@@ -57,15 +56,18 @@ describe('bin', () => {
       '-n', name,
     ]
 
-    // const cmd = `node ${args.join(' ')}`
+    const cmd = `node ${args.join(' ')}`
 
-    execaSync(process.execPath, args)
+    exec(cmd, (err) => {
+      console.error(err)
 
-    const result = readFileSync(filePath, 'utf-8')
+      const result = readFileSync(filePath, 'utf-8')
 
-    expect(result.includes(year)).toBeTruthy()
-    expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
-    expect(result.includes('FOO')).toBeTruthy()
+      expect(result.includes(year)).toBeTruthy()
+      expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
+      expect(result.includes('FOO')).toBeTruthy()
 
+      done()
+    })
   })
 })

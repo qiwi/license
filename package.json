@@ -27,7 +27,7 @@
     "test": "yarn lint && yarn jest",
     "clean": "rimraf target typings",
     "build": "yarn clean && yarn build:tpl && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef && yarn docs && yarn uglify && yarn build:bundle",
-    "build:tpl": "mkdir -p target/tpl && cp -r src/main/tpl/ \"$_\"",
+    "build:tpl": "mkdir -p target/tpl && cp src/main/tpl/* target/tpl",
     "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.es5.json",
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.es6.json",
     "build:ts": "cp -r src/main/ts/ target/ts/",
