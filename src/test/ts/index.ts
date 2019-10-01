@@ -39,14 +39,14 @@ describe('index', () => {
 })
 
 describe('bin', () => {
-  it('parses CLI flags and creates license file', async () => {
+  it('parses CLI flags and creates license file', () => {
     const year = '2010-2019' + Math.random()
     const dir = resolve(__dirname, '../tmp')
     const lang = TLanguage.RU
     const name = 'licFromCli'
     const filePath = resolve(dir, name)
 
-    await execaSync(process.execPath,[
+    execaSync(process.execPath,[
       './target/es5/cli.js',
       '-l', lang,
       '--dir', dir,
