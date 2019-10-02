@@ -49,3 +49,4 @@ generate({
 | `file`       | License file name | `LICENSE` |
 | `dir`        | License target dir | Project root |
 | `name`       | Project name | `name` from `package.json` |
+| `type`       | License type | `qosl` |

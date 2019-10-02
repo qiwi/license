@@ -11,6 +11,7 @@ export const cli = meow(`
     --file, -f    License file name
     --dir,  -d    License target directory
     --name, -n    Software name
+    --type, -t    License type
 
   Examples
     $ qiwilicense --year=2020 --dir=/Users/foo/bar
@@ -36,6 +37,10 @@ export const cli = meow(`
     name: {
       type: 'string',
       alias: 'n',
+    },
+    type: {
+      type: 'string',
+      alias: 't',
     },
   },
 })

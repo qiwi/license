@@ -1,8 +1,7 @@
 import {resolve} from 'path'
 import {readFileSync} from 'fs'
 import {exec} from 'child_process'
-import {render, generate} from '../../main/ts'
-import {TLanguage} from '../../main/ts/interface'
+import {render, generate, TLanguage} from '../../main/ts'
 
 describe('index', () => {
   describe('render', () => {
@@ -24,6 +23,7 @@ describe('index', () => {
       const year = '2010-2019' + Math.random()
       const dir = resolve(__dirname, '../tmp')
       const file = 'lic'
+      const type = 'mit'
       const filePath = resolve(dir, file)
 
       generate({
@@ -31,9 +31,13 @@ describe('index', () => {
         file,
         dir,
         year,
+        type,
       })
 
-      expect(readFileSync(filePath, 'utf-8').includes(year)).toBeTruthy()
+      const result = readFileSync(filePath, 'utf-8')
+
+      expect(result.includes('MIT License')).toBeTruthy()
+      expect(result.includes(year)).toBeTruthy()
     })
   })
 })
@@ -58,9 +62,7 @@ describe('bin', () => {
 
     const cmd = `node ${args.join(' ')}`
 
-    exec(cmd, (err) => {
-      console.error(err)
-
+    exec(cmd, () => {
       const result = readFileSync(filePath, 'utf-8')
 
       expect(result.includes(year)).toBeTruthy()

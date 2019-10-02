@@ -17,11 +17,12 @@ export const DEFAULT_OPTS: IRenderOpts = {
   year: new Date().getFullYear(),
   dir: ROOT,
   name: readPkgSync().name,
+  type: 'qosl',
 }
 
 export const render = (opts: IRenderOpts): string => {
-  const {lang, year, name} = {...DEFAULT_OPTS, ...opts}
-  const tpl = loadTemplate(`license_${lang}.tpl`)
+  const {lang, year, name, type} = {...DEFAULT_OPTS, ...opts}
+  const tpl = loadTemplate(`${type}_${lang}.tpl`)
 
   return template(tpl)({year, name})
 }

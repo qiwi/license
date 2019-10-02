@@ -8,5 +8,6 @@ export type IRenderOpts = {
   year?: number | string,
   dir?: string,
   file?: string,
-  name?: string
+  name?: string,
+  type?: string
 }
