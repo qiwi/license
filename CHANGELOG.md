@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/qiwi/license/compare/v1.0.3...v1.1.0) (2019-10-02)
+
+
+### Features
+
+* support several license types ([f008284](https://github.com/qiwi/license/commit/f008284))
+
 ## [1.0.3](https://github.com/qiwi/license/compare/v1.0.2...v1.0.3) (2019-10-01)
 
 
