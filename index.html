@@ -62,8 +62,8 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#qiwi-oss-license" id="qiwi-oss-license" style="color: inherit; text-decoration: none;">
-					<h1>QIWI OSS License</h1>
+				<a href="#qiwi-open-source-license" id="qiwi-open-source-license" style="color: inherit; text-decoration: none;">
+					<h1>QIWI Open Source License</h1>
 				</a>
 				<p><a href="https://travis-ci.com/qiwi/license"><img src="https://travis-ci.com/qiwi/license.svg?branch=master" alt="Build Status"></a>
 					<a href="https://www.npmjs.com/package/@qiwi/license"><img src="https://img.shields.io/npm/v/@qiwi/license/latest.svg" alt="npm (tag)"></a>
@@ -78,23 +78,25 @@
 				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 					<h2>Install</h2>
 				</a>
-				<pre><code class="language-bash">yarn add @qiwi/license
-npm i @qiwi/license</code></pre>
+				<pre><code class="language-bash">yarn add @qiwi/license -D
+npm add @qiwi/license -D</code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
 				<p>Through CLI</p>
-				<pre><code class="language-bash">qiwilicense name=<span class="hljs-string">'LICENSE'</span> dir=/some/path lang=ru year=2019</code></pre>
+				<pre><code class="language-bash">qiwilicense --name=<span class="hljs-string">'LICENSE'</span> --dir=/some/path --lang=ru --year=2019</code></pre>
+				<p>With <a href="https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner">npx</a></p>
+				<pre><code class="language-bash">npx @qiwi/license --<span class="hljs-built_in">type</span>=mit --year=2019 --dir=/some/path</code></pre>
 				<p>TS/JS</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">import</span> {generate, render} <span class="hljs-keyword">from</span> <span class="hljs-string">'@qiwi/license'</span>
 
+<span class="hljs-comment">// Get the text and do something next</span>
 <span class="hljs-keyword">const</span> text = render({
   <span class="hljs-attr">lang</span>: <span class="hljs-string">'ru'</span>,
   <span class="hljs-attr">year</span>: <span class="hljs-string">'2010-2019'</span>
 })
-<span class="hljs-comment">// ... do something</span>
 
-<span class="hljs-comment">// Or render and write to a file:</span>
+<span class="hljs-comment">// Or just write to a file:</span>
 generate({
   <span class="hljs-attr">name</span>: <span class="hljs-string">'LIC'</span>,
   <span class="hljs-attr">dir</span>: resolve(__dirname, <span class="hljs-string">'../foo/bar'</span>),
@@ -136,6 +138,11 @@ generate({
 							<td><code>name</code></td>
 							<td>Project name</td>
 							<td><code>name</code> from <code>package.json</code></td>
+						</tr>
+						<tr>
+							<td><code>type</code></td>
+							<td>License type</td>
+							<td><code>qosl</code></td>
 						</tr>
 				</tbody></table>
 			</div>
