@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/qiwi/license/compare/v1.1.0...v1.1.1) (2019-10-15)
+
+
+### Bug Fixes
+
+* **cli:** add missed shebang ([3c2297e](https://github.com/qiwi/license/commit/3c2297e)), closes [#3](https://github.com/qiwi/license/issues/3)
+
 # [1.1.0](https://github.com/qiwi/license/compare/v1.0.3...v1.1.0) (2019-10-02)
 
 
