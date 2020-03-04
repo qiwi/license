@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/qiwi/license/compare/v1.1.1...v1.1.2) (2020-03-04)
+
+
+### Bug Fixes
+
+* up deps, fix vulns ([47c29f8](https://github.com/qiwi/license/commit/47c29f8))
+
 ## [1.1.1](https://github.com/qiwi/license/compare/v1.1.0...v1.1.1) (2019-10-15)
 
 
