@@ -19,7 +19,7 @@ npm add @qiwi/license -D
 ## Usage
 Through CLI
 ```bash
-qiwilicense --name='LICENSE' --dir=/some/path --lang=ru --year=2019
+qiwilicense --name='@qiwi/some-project' --dir=. --lang=en --file=LICENSE --type=mit --year=2019
 ```
 With [npx](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner)
 ```bash
@@ -39,7 +39,7 @@ const text = render({
 
 // Or just write to a file:
 generate({
-  name: 'LIC',
+  name: 'PROJECT_NAME',
   dir: resolve(__dirname, '../foo/bar'),
   lang: 'en',
   year: '2019'
