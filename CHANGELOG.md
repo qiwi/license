@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/qiwi/license/compare/v1.1.2...v1.1.3) (2020-06-28)
+
+
+### Bug Fixes
+
+* **libdef:** migrate to libdefkit, fix pkg scope ([dc5ae42](https://github.com/qiwi/license/commit/dc5ae42a8e586c7e015d2f824bde0dd77cd70ce6))
+
 ## [1.1.2](https://github.com/qiwi/license/compare/v1.1.1...v1.1.2) (2020-03-04)
 
 
