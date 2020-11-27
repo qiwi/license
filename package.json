@@ -60,7 +60,7 @@
     "@types/read-pkg": "^5.1.0",
     "find-git-root": "^1.0.4",
     "lodash": "^4.17.15",
-    "meow": "^7.0.1",
+    "meow": "^8.0.0",
     "read-pkg": "^5.2.0",
     "tslib": "^2.0.0"
   },
