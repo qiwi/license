@@ -76,7 +76,7 @@
     "coveralls": "^3.1.0",
     "eslint-plugin-typescript": "^0.14.0",
     "esm": "^3.2.25",
-    "execa": "^4.0.2",
+    "execa": "^5.0.0",
     "jest": "^26.1.0",
     "lodash": "^4.17.15",
     "microbundle": "^0.12.2",
