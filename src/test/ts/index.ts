@@ -3,6 +3,8 @@ import {readFileSync} from 'fs'
 import {exec} from 'child_process'
 import {render, generate, TLanguage} from '../../main/ts'
 
+const dir = resolve(__dirname, '../tmp')
+
 describe('index', () => {
   describe('render', () => {
     it('returns license text for the specified language (if exists)', () => {
@@ -21,7 +23,6 @@ describe('index', () => {
   describe('generate', () => {
     it('creates / updates target file with license', () => {
       const year = '2010-2019' + Math.random()
-      const dir = resolve(__dirname, '../tmp')
       const file = 'lic'
       const type = 'mit'
       const filePath = resolve(dir, file)
@@ -45,7 +46,6 @@ describe('index', () => {
 describe('bin', () => {
   it('parses CLI flags and creates license file', (done) => {
     const year = '2010-2019' + Math.random()
-    const dir = resolve(__dirname, '../tmp')
     const lang = TLanguage.RU
     const file = 'licFromCli'
     const filePath = resolve(dir, file)
@@ -64,7 +64,6 @@ describe('bin', () => {
 
     exec(cmd, () => {
       const result = readFileSync(filePath, 'utf-8')
-
       expect(result.includes(year)).toBeTruthy()
       expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
       expect(result.includes('FOO')).toBeTruthy()
