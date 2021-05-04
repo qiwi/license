@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>protopipe | protopipe</title>
+	<title>TLanguage | protopipe</title>
 	<meta name="description" content="Documentation for protopipe">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2674,7 +2674,7 @@ img {
 		<div class="container">
 			<div class="table-wrap">
 				<div class="table-cell">
-					<strong><a href="index.html">protopipe</a></strong>
+					<strong><a href="../index.html">protopipe</a></strong>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -2704,114 +2704,59 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class="current tsd-kind-enum tsd-parent-kind-module">
+			<a href="interface.tlanguage.html" class="tsd-kind-icon">TLanguage</a>
+			<ul>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="interface.tlanguage.html#en" class="tsd-kind-icon">EN</a>
+				</li>
+				<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+					<a href="interface.tlanguage.html#ru" class="tsd-kind-icon">RU</a>
+				</li>
+			</ul>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+			<a href="../modules/interface.html#irenderopts" class="tsd-kind-icon">IRender<wbr>Opts</a>
+		</li>
 	</ul>
 </nav>
 <div class="container container-main">
 	<div class="content-wrap">
-		<div class="tsd-panel tsd-typography">
-			<a href="#qiwi-open-source-license" id="qiwi-open-source-license" style="color: inherit; text-decoration: none;">
-				<h1>QIWI Open Source License</h1>
-			</a>
-			<p><a href="https://travis-ci.com/qiwi/license"><img src="https://travis-ci.com/qiwi/license.svg?branch=master" alt="Build Status"></a>
-				<a href="https://www.npmjs.com/package/@qiwi/license"><img src="https://img.shields.io/npm/v/@qiwi/license/latest.svg" alt="npm (tag)"></a>
-				<a href="https://david-dm.org/qiwi/license"><img src="https://img.shields.io/david/qiwi/license.svg?maxAge=300" alt="dependencyStatus"></a>
-				<a href="https://codeclimate.com/github/qiwi/license/maintainability"><img src="https://api.codeclimate.com/v1/badges/cae4d8e55c58e5cbc4b6/maintainability" alt="Maintainability"></a>
-			<a href="https://codeclimate.com/github/qiwi/license/test_coverage"><img src="https://api.codeclimate.com/v1/badges/cae4d8e55c58e5cbc4b6/test_coverage" alt="Test Coverage"></a></p>
-			<p><a href="https://en.wikipedia.org/wiki/MIT_License">MIT</a> compatible and corresponding to the <a href="https://en.wikipedia.org/wiki/Civil_Code_of_Russia">Civil Code</a> of the Russian Federation. </p>
-			<ul>
-				<li><a href="./src/main/tpl/license_en.tpl">License in English</a> (en)</li>
-				<li><a href="./src/main/tpl/license_ru.tpl">Лицензия на русском</a> (ru)</li>
-			</ul>
-			<a href="#install" id="install" style="color: inherit; text-decoration: none;">
-				<h2>Install</h2>
-			</a>
-			<pre><code class="language-bash"><span style="color: #000000">yarn add @qiwi/license -D</span>
-<span style="color: #000000">npm add @qiwi/license -D</span>
-</code></pre>
-			<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-				<h2>Usage</h2>
-			</a>
-			<p>Through CLI</p>
-			<pre><code class="language-bash"><span style="color: #000000">qiwilicense --name=</span><span style="color: #A31515">&#039;@qiwi/some-project&#039;</span><span style="color: #000000"> --dir=. --lang=en --file=LICENSE --type=mit --year=2019</span>
-</code></pre>
-			<p>With <a href="https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner">npx</a></p>
-			<pre><code class="language-bash"><span style="color: #000000">npx @qiwi/license --type=mit --year=2019 --dir=/some/path</span>
-</code></pre>
-			<p>TS/JS</p>
-			<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">generate</span><span style="color: #000000">, </span><span style="color: #001080">render</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@qiwi/license&#039;</span>
-
-<span style="color: #008000">// Get the text and do something next</span>
-<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">text</span><span style="color: #000000"> = </span><span style="color: #795E26">render</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">lang:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ru&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">year:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;2010-2019&#039;</span>
-<span style="color: #000000">})</span>
-
-<span style="color: #008000">// Or just write to a file:</span>
-<span style="color: #795E26">generate</span><span style="color: #000000">({</span>
-<span style="color: #000000">  </span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;PROJECT_NAME&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">dir:</span><span style="color: #000000"> </span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #001080">__dirname</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;../foo/bar&#039;</span><span style="color: #000000">),</span>
-<span style="color: #000000">  </span><span style="color: #001080">lang:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;en&#039;</span><span style="color: #000000">,</span>
-<span style="color: #000000">  </span><span style="color: #001080">year:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;2019&#039;</span>
-<span style="color: #000000">})</span>
-</code></pre>
-			<a href="#options" id="options" style="color: inherit; text-decoration: none;">
-				<h2>Options</h2>
-			</a>
-			<table>
-				<thead>
-					<tr>
-						<th>Option</th>
-						<th>Description</th>
-						<th>Default</th>
-					</tr>
-				</thead>
-				<tbody><tr>
-						<td><code>year</code></td>
-						<td>Sets year</td>
-						<td>Current <code>.getFullYear()</code></td>
-					</tr>
-					<tr>
-						<td><code>lang</code></td>
-						<td>Text language</td>
-						<td><code>en</code></td>
-					</tr>
-					<tr>
-						<td><code>file</code></td>
-						<td>License file name</td>
-						<td><code>LICENSE</code></td>
-					</tr>
-					<tr>
-						<td><code>dir</code></td>
-						<td>License target dir</td>
-						<td>Project root</td>
-					</tr>
-					<tr>
-						<td><code>name</code></td>
-						<td>Project name</td>
-						<td><code>name</code> from <code>package.json</code></td>
-					</tr>
-					<tr>
-						<td><code>type</code></td>
-						<td>License type</td>
-						<td><code>qosl</code></td>
-					</tr>
-			</tbody></table>
-		</div>
-		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Modules</h3>
+						<h3>Enumeration members</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-module"><a href="modules/cli.html" class="tsd-kind-icon">cli</a></li>
-							<li class="tsd-kind-module"><a href="modules/index.html" class="tsd-kind-icon">index</a></li>
-							<li class="tsd-kind-module"><a href="modules/interface.html" class="tsd-kind-icon">interface</a></li>
-							<li class="tsd-kind-module"><a href="modules/license.html" class="tsd-kind-icon">license</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="interface.tlanguage.html#en" class="tsd-kind-icon">EN</a></li>
+							<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="interface.tlanguage.html#ru" class="tsd-kind-icon">RU</a></li>
 						</ul>
 					</section>
 				</div>
+			</section>
+		</section>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>Enumeration members</h2>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="en" class="tsd-anchor"></a>
+				<h3>EN</h3>
+				<div class="tsd-signature tsd-kind-icon">EN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;en&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/license/blob/3e5fd67/src/main/ts/interface.ts#L3">interface.ts:3</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+				<a name="ru" class="tsd-anchor"></a>
+				<h3>RU</h3>
+				<div class="tsd-signature tsd-kind-icon">RU<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;ru&quot;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/license/blob/3e5fd67/src/main/ts/interface.ts#L2">interface.ts:2</a></li>
+					</ul>
+				</aside>
 			</section>
 		</section>
 		<footer>
