@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/qiwi/license/compare/v1.1.3...v1.2.0) (2021-05-04)
+
+
+### Bug Fixes
+
+* up deps, fix vuls ([65dcc4e](https://github.com/qiwi/license/commit/65dcc4e97f1c94604b138d45e9473857e323b38f))
+
+
+### Features
+
+* meet type module, deps revision ([aa7cb97](https://github.com/qiwi/license/commit/aa7cb97efa73bfd1e610a64c526565bcc45191a8))
+
 ## [1.1.3](https://github.com/qiwi/license/compare/v1.1.2...v1.1.3) (2020-06-28)
 
 
