@@ -1,22 +1,22 @@
+import {gitRootSync} from '@antongolub/git-root'
 import {readFileSync, writeFileSync, mkdirSync} from 'fs'
 import {resolve} from 'path'
-import {template} from 'lodash'
-import findGitRoot from 'find-git-root'
-import {sync as readPkgSync} from 'read-pkg'
+import {template} from 'lodash-es'
+import {readPackageSync} from 'read-pkg'
 
 import {
   IRenderOpts,
   TLanguage,
 } from './interface'
 
-const ROOT = resolve(findGitRoot(), '..')
+const ROOT = gitRootSync() as string
 
 export const DEFAULT_OPTS: IRenderOpts = {
   lang: TLanguage.EN,
   file: 'LICENSE',
   year: new Date().getFullYear(),
   dir: ROOT,
-  name: readPkgSync().name,
+  name: readPackageSync().name,
   type: 'qosl',
 }
 
