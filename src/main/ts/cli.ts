@@ -19,6 +19,8 @@ export const cli = meow(`
     $ qiwilicense --year=2020 --dir=/Users/foo/bar
     $ qiwilicense -l en -f lic -n Pijma
 `, {
+  // tslint:disable-next-line
+  importMeta: import.meta,
   flags: {
     lang: {
       type: 'string',
