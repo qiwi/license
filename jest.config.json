@@ -8,10 +8,11 @@
     "<rootDir>/node_modules/(?!(read-pkg|lodash-es)/.*)"
   ],
   "collectCoverage": true,
-  "coveragePathIgnorePatterns": [
-  ],
   "collectCoverageFrom": [
     "<rootDir>/src/main/**/*.(j|t)s"
+  ],
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/src/main/ts/cli.ts"
   ],
   "testMatch": [
     "<rootDir>/src/test/js/**/*.js",
@@ -19,12 +20,12 @@
   ],
   "testPathIgnorePatterns": [
     "/node_modules/"
-
   ],
   "moduleFileExtensions": [
     "ts",
     "tsx",
     "js",
+    "mjs",
     "jsx",
     "json",
     "node"
