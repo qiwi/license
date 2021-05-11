@@ -6996,10 +6996,10 @@ ts-jest@^26.5.6:
     semver "7.x"
     yargs-parser "20.x"
 
-tsc-es2020-fix@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tsc-es2020-fix/-/tsc-es2020-fix-1.0.0.tgz#6f813c231e9f852e8e63f9b48cd308c2c697a527"
-  integrity sha512-XRhYPfsTHwysdLopfvLcEWzCoDZKg+I2npGXl+aLrYvL7xr6pMX61sGaqk45xKmO2yVDHPEEkWATbUJisEG0AQ==
+tsc-es2020-fix@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/tsc-es2020-fix/-/tsc-es2020-fix-1.1.0.tgz#ea0240472a8c6a87bbeaf3d41d02f06b7a577195"
+  integrity sha512-Hks51+CLIxKH/zFaYIAbSo0VPoRsiZwlMQy75HBhhJp919CCr7ioFcNLTRaidTWfOaWzoxB9teLio1Ntul8mgw==
   dependencies:
     fs-extra "^10.0.0"
     globby "^11.0.3"
