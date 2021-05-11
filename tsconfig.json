@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "module": "es2020",
     "esModuleInterop": true,
     "rootDir": "./src/main/ts/",
     "baseUrl": "./src/main/ts/",

@@ -44,7 +44,7 @@ describe('index', () => {
 })
 
 describe('bin', () => {
-  it('parses CLI flags and creates license file', (done) => {
+  it('parses CLI flags and creates a license file', (done) => {
     const year = '2010-2019' + Math.random()
     const lang = TLanguage.RU
     const file = 'licFromCli'
@@ -52,7 +52,7 @@ describe('bin', () => {
     const name = 'FOO'
 
     const args = [
-      './target/es5/cli.js',
+      './target/es6/cli.mjs',
       '-l', lang,
       '--dir', dir,
       `--file=${file}`,
