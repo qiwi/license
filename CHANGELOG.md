@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/qiwi/license/compare/v1.2.0...v1.3.0) (2021-05-11)
+
+
+### Bug Fixes
+
+* **deps:** up meow to v10 ([4bed9b9](https://github.com/qiwi/license/commit/4bed9b944c14b68901c69c1390d0d0f7088329ff))
+
+
+### Features
+
+* repack as es2020 module ([f79122d](https://github.com/qiwi/license/commit/f79122d2a15de6c6911567e4f001380eb9519a87))
+
 # [1.2.0](https://github.com/qiwi/license/compare/v1.1.3...v1.2.0) (2021-05-04)
 
 
