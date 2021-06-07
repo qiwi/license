@@ -1702,7 +1702,7 @@
   resolved "https://registry.yarnpkg.com/@types/find-cache-dir/-/find-cache-dir-3.2.0.tgz#eaaf331699dccf52c47926e4d4f8f3ed8db33f3c"
   integrity sha512-+JeT9qb2Jwzw72WdjU+TSvD5O1QRPWCeRpDJV+guiIq+2hwR0DFGw+nZNbTFjMIVe6Bf4GgAKeB/6Ytx6+MbeQ==
 
-"@types/fs-extra@^9.0.8":
+"@types/fs-extra@^9.0.11", "@types/fs-extra@^9.0.8":
   version "9.0.11"
   resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.11.tgz#8cc99e103499eab9f347dbc6ca4e99fb8d2c2b87"
   integrity sha512-mZsifGG4QeQ7hlkhO56u7zt/ycBgGxSVsFI/6lGTU34VtwkiqrrSDgw0+ygs8kFGWcXnFQWMrzF2h7TtDFNixA==
@@ -6996,11 +6996,12 @@ ts-jest@^26.5.6:
     semver "7.x"
     yargs-parser "20.x"
 
-tsc-es2020-fix@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/tsc-es2020-fix/-/tsc-es2020-fix-1.1.0.tgz#ea0240472a8c6a87bbeaf3d41d02f06b7a577195"
-  integrity sha512-Hks51+CLIxKH/zFaYIAbSo0VPoRsiZwlMQy75HBhhJp919CCr7ioFcNLTRaidTWfOaWzoxB9teLio1Ntul8mgw==
+tsc-es2020-fix@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tsc-es2020-fix/-/tsc-es2020-fix-2.0.0.tgz#5d18a388dac13cf39dc41636090e612cb1c2daa6"
+  integrity sha512-IZ8BXkW3uTkAbOOBmb3NLTSvcp8E3bE2Nkk1leNTcrRuA/DfUIXAAwhVp9C0OVKmIk4ENu0iqCjeSwd9WFZtSw==
   dependencies:
+    "@types/fs-extra" "^9.0.11"
     fs-extra "^10.0.0"
     globby "^11.0.3"
     meow "^10.0.0"
