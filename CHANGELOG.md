@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/qiwi/license/compare/v1.3.0...v1.3.1) (2021-06-19)
+
+
+### Bug Fixes
+
+* **package:** update deps, fix some vulnerabilities ([dfd894b](https://github.com/qiwi/license/commit/dfd894b1e0663d086e747ffd6c71e95d36e30e09))
+
 # [1.3.0](https://github.com/qiwi/license/compare/v1.2.0...v1.3.0) (2021-05-11)
 
 
