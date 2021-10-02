@@ -1,4 +1,4 @@
-# QIWI Open Source License
+# QIWI Open Source Software License
 [![Build Status](https://travis-ci.com/qiwi/license.svg?branch=master)](https://travis-ci.com/qiwi/license)
 [![npm (tag)](https://img.shields.io/npm/v/@qiwi/license/latest.svg)](https://www.npmjs.com/package/@qiwi/license)
 [![dependencyStatus](https://img.shields.io/david/qiwi/license.svg?maxAge=300)](https://david-dm.org/qiwi/license)
