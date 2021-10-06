@@ -79,7 +79,7 @@
     "esm": "^3.2.25",
     "execa": "^5.1.1",
     "jest": "^27.0.4",
-    "microbundle": "^0.13.3",
+    "microbundle": "^0.14.0",
     "rimraf": "^3.0.2",
     "terser": "^5.7.0",
     "ts-jest": "^27.0.3",
