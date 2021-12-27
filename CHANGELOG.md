@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
+
+
+### Bug Fixes
+
+* up deps, fix some vuls ([069f121](https://github.com/qiwi/license/commit/069f121b8906205e1b5eb009563a42453f3b1e7c))
+
 ## [1.3.2](https://github.com/qiwi/license/compare/v1.3.1...v1.3.2) (2021-10-02)
 
 ## [1.3.1](https://github.com/qiwi/license/compare/v1.3.0...v1.3.1) (2021-06-19)
