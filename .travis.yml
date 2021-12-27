@@ -1,6 +1,6 @@
 language: node_js
 cache: yarn
-node_js: 14
+node_js: 16
 install: skip
 os: linux
 dist: focal
@@ -41,7 +41,7 @@ jobs:
       workspaces:
         use: linux-shared
     - <<: *test
-      node_js: 12
+      node_js: 14
     - <<: *test
       if: branch = master AND type != pull_request AND env(CI_TEST) != false
       before_script:
