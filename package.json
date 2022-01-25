@@ -74,7 +74,7 @@
     "@qiwi/libdefkit": "^3.1.2",
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.0.3",
-    "@types/jest-json-schema": "^2.1.4",
+    "@types/jest-json-schema": "^6.0.0",
     "coveralls": "^3.1.1",
     "esm": "^3.2.25",
     "execa": "^6.0.0",
