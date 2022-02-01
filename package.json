@@ -71,7 +71,7 @@
     "tslib": "^2.3.1"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^3.1.2",
+    "@qiwi/libdefkit": "^4.0.0",
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.0.3",
     "@types/jest-json-schema": "^6.0.0",
