@@ -2,15 +2,6 @@
 # yarn lockfile v1
 
 
-"@antongolub/git-root@^1.5.7":
-  version "1.5.7"
-  resolved "https://registry.yarnpkg.com/@antongolub/git-root/-/git-root-1.5.7.tgz#d119ced973b30636b17bdfbea7c2ad55c660ee7f"
-  integrity sha512-UsaKzLELgOwPJWeeC3tgqcu95HJWUzRBdVaC4JjCDxQTU9zv/KkwoYpXubCDcFZRPcIknIxWyD58s7hMGCG+aw==
-  dependencies:
-    "@qiwi/substrate" "^1.20.14"
-    find-up "^5.0.0"
-    tslib "^2.4.0"
-
 "@babel/code-frame@^7.0.0":
   version "7.10.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.3.tgz#324bcfd8d35cd3d47dae18cde63d752086435e9a"

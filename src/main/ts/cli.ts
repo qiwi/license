@@ -12,6 +12,7 @@ export const cli = meow(`
     --lang, -l    Specifies license test language
     --file, -f    License file name
     --dir,  -d    License target directory
+    --cwd,  -c    --dir option alias
     --name, -n    Software name
     --type, -t    License type
 
@@ -33,6 +34,10 @@ export const cli = meow(`
     dir: {
       type: 'string',
       alias: 'd',
+    },
+    cwd: {
+      type: 'string',
+      alias: 'c',
     },
     file: {
       type: 'string',

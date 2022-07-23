@@ -57,7 +57,6 @@
   },
   "homepage": "https://github.com/qiwi/license#readme",
   "dependencies": {
-    "@antongolub/git-root": "^1.5.7",
     "@qiwi/substrate": "^1.20.14",
     "@types/lodash-es": "^4.17.6",
     "@types/meow": "^6.0.0",

@@ -1,4 +1,3 @@
-import {gitRootSync} from '@antongolub/git-root'
 import {readFileSync, writeFileSync, mkdirSync} from 'fs'
 import {resolve} from 'path'
 import {template} from 'lodash-es'
@@ -9,13 +8,11 @@ import {
   TLanguage,
 } from './interface'
 
-const ROOT = gitRootSync() as string
-
 export const DEFAULT_OPTS: IRenderOpts = {
   lang: TLanguage.EN,
   file: 'LICENSE',
   year: new Date().getFullYear(),
-  dir: ROOT,
+  cwd: process.cwd(),
   name: readPackageSync().name,
   type: 'qosl',
 }
@@ -34,10 +31,11 @@ export const loadTemplate = (name: string): string => {
 }
 
 export const generate = (opts: IRenderOpts) => {
-  const {dir, file} = {...DEFAULT_OPTS, ...opts}
+  const {dir, cwd, file} = {...DEFAULT_OPTS, ...opts}
   const text = render(opts)
-  const target = resolve(dir + '', file + '')
+  const _cwd = dir || cwd
+  const target = resolve(_cwd + '', file + '')
 
-  mkdirSync(dir + '', {recursive: true})
+  mkdirSync(_cwd + '', {recursive: true})
   writeFileSync(target, text, 'utf-8')
 }
