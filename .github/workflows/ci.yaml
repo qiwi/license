@@ -134,5 +134,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_COMMITTER_EMAIL: 'opensource@qiwi.com'
           GIT_COMMITTER_NAME: 'qiwibot'
-          DEBUG: true
         run: npm_config_yes=true npx zx-semrel
