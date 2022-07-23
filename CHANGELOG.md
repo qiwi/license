@@ -1,3 +1,8 @@
+## [1.4.3](https://github.com/qiwi/license/compare/v1.4.2...v1.4.3) (2022-07-23)
+
+### Fixes & improvements
+* fix: replace tslint with eslint ([51ef9a7](https://github.com/qiwi/license/commit/51ef9a70ee0efda18c79afa533a2b6d78434a259))
+
 ## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
 
 
