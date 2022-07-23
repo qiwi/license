@@ -1,3 +1,8 @@
+## [1.4.1](https://github.com/qiwi/license/compare/v1.4.0...v1.4.1) (2022-07-23)
+
+### Fixes & improvements
+* docs: update ci badge ([4160bcd](https://github.com/qiwi/license/commit/4160bcd8010a9aba18874794ba356136978bb20c))
+
 ## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
 
 
