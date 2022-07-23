@@ -1,3 +1,8 @@
+## [1.4.4](https://github.com/qiwi/license/compare/v1.4.3...v1.4.4) (2022-07-23)
+
+### Fixes & improvements
+* fix(pkg): fix cjs etnry point ([09cd034](https://github.com/qiwi/license/commit/09cd0340e7479fc23599cd280ef96a2677df0d02))
+
 ## [1.4.3](https://github.com/qiwi/license/compare/v1.4.2...v1.4.3) (2022-07-23)
 
 ### Fixes & improvements

@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/license",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "QIWI OSS License",
   "bin": {
     "qiwilicense": "target/es6/cli.js"
