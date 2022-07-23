@@ -1,26 +1,29 @@
 import {resolve} from 'path'
 import {readFileSync} from 'fs'
-import {exec} from 'child_process'
+import {exec as _exec} from 'child_process'
+import {promisify} from 'util'
 import {render, generate, TLanguage} from '../../main/ts'
+import {describe, expect} from './test-utils'
 
 const dir = resolve(__dirname, '../tmp')
+const exec = promisify(_exec)
 
 describe('index', () => {
-  describe('render', () => {
+  describe('render', (it) => {
     it('returns license text for the specified language (if exists)', () => {
       expect(render({
         lang: TLanguage.EN,
-      })).toEqual(expect.any(String))
+      })).toEqual(expect.a(String))
     })
 
     it('throws error otherwise', () => {
       expect(() => render({
         lang: 'foo',
-      })).toThrowError()
+      })).toThrow(Error)
     })
   })
 
-  describe('generate', () => {
+  describe('generate', (it) => {
     it('creates / updates target file with license', () => {
       const year = '2010-2019' + Math.random()
       const file = 'lic'
@@ -43,8 +46,8 @@ describe('index', () => {
   })
 })
 
-describe('bin', () => {
-  it('parses CLI flags and creates a license file', (done) => {
+describe('bin', (it) => {
+  it('parses CLI flags and creates a license file', async() => {
     const year = '2010-2019' + Math.random()
     const lang = TLanguage.RU
     const file = 'licFromCli'
@@ -62,13 +65,11 @@ describe('bin', () => {
 
     const cmd = `node ${args.join(' ')}`
 
-    exec(cmd, () => {
-      const result = readFileSync(filePath, 'utf-8')
-      expect(result.includes(year)).toBeTruthy()
-      expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
-      expect(result.includes('FOO')).toBeTruthy()
+    await exec(cmd)
 
-      done()
-    })
+    const result = readFileSync(filePath, 'utf-8')
+    expect(result.includes(year)).toBeTruthy()
+    expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
+    expect(result.includes('FOO')).toBeTruthy()
   })
 })
