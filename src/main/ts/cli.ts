@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import meow from 'meow'
+
 import {generate} from './license'
 
 export const cli = meow(`

@@ -1,8 +1,9 @@
-import {resolve} from 'path'
-import {readFileSync, writeFileSync} from 'fs'
 import {exec as _exec} from 'child_process'
+import {readFileSync, writeFileSync} from 'fs'
+import {resolve} from 'path'
 import {promisify} from 'util'
-import {render, generate, TLanguage} from '../../main/ts'
+
+import {generate, render, TLanguage} from '../../main/ts'
 import {describe, expect} from './test-utils'
 
 const dir = resolve(__dirname, '../tmp')

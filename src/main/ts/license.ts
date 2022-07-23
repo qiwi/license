@@ -1,6 +1,6 @@
-import {readFileSync, writeFileSync, mkdirSync} from 'fs'
-import {resolve} from 'path'
+import {mkdirSync,readFileSync, writeFileSync} from 'fs'
 import {template} from 'lodash-es'
+import {resolve} from 'path'
 
 import {
   IRenderOpts,
@@ -57,5 +57,6 @@ export const patchPackageJson = (cwd: string) => {
   const pkgJson = readPkgPkgJson(cwd)
   pkgJson.license = 'MIT'
 
+  // eslint-disable-next-line unicorn/no-null
   writeFileSync(resolve(cwd, 'package.json'), JSON.stringify(pkgJson, null, 2), 'utf-8')
 }
