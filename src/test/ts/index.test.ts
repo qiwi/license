@@ -65,7 +65,7 @@ describe('bin', (it) => {
 
     const cmd = `node ${args.join(' ')}`
 
-    await exec(cmd)
+    await exec(cmd, {env: {}})
 
     const result = readFileSync(filePath, 'utf-8')
     expect(result.includes(year)).toBeTruthy()
