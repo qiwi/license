@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/qiwi/license/compare/v1.3.5...v1.4.0) (2022-07-23)
+
+### Features
+* feat: update pkg json license field ([97cb010](https://github.com/qiwi/license/commit/97cb010a042020abd2189c8f960dd4731f334bfe))
+* feat: introduce `cwd` alias for `dir` option ([463a5d8](https://github.com/qiwi/license/commit/463a5d86885ddf1f977548828d5a1783b8fa3d44))
+
 ## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
 
 
