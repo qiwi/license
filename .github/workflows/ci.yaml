@@ -57,10 +57,7 @@ jobs:
           yarn
 
       - name: Unit tests
-        # https://github.com/facebook/jest/issues/12740
-        run: |
-          yarn test
-          sed 's/src\/src/src/g' coverage/lcov.info | sponge coverage/lcov.info
+        run: yarn test
 
       - name: Update coverage
         if: github.ref == 'refs/heads/master'
