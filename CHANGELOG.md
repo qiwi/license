@@ -1,3 +1,8 @@
+## [1.3.4](https://github.com/qiwi/license/compare/v1.3.3...v1.3.4) (2022-07-23)
+
+### Fixes & improvements
+* fix: apply yarn-audit-fix ([18cd1ec](https://github.com/qiwi/license/commit/18cd1ec6bd7c4f8796dea995c9d0a4ce05c356fb))
+
 ## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
 
 

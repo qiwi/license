@@ -1,0 +1,154 @@
+{
+  "ci_service": {
+    "branch": "master",
+    "build_identifier": "",
+    "build_url": "",
+    "commit_sha": "d8c9a4e3aba30b9c19660529c7bd781519571e62",
+    "committed_at": 1658572388,
+    "name": "true"
+  },
+  "environment": {
+    "gem_version": "3.1.2",
+    "package_version": "",
+    "pwd": "/home/runner/work/license/license",
+    "prefix": "/home/runner/work/license/license",
+    "rails_root": "",
+    "reporter_version": "0.10.3",
+    "simplecov_root": ""
+  },
+  "git": {
+    "branch": "master",
+    "head": "d8c9a4e3aba30b9c19660529c7bd781519571e62",
+    "committed_at": 1658572388
+  },
+  "covered_percent": 100,
+  "covered_strength": 0,
+  "line_counts": {
+    "missed": 0,
+    "covered": 160,
+    "total": 160
+  },
+  "source_files": [
+    {
+      "blob_id": "c0684c1df9e45b2c1719946c59e95680b8a4bcb9",
+      "coverage": "[1,1,1,1,1,5,5,5,5]",
+      "covered_percent": 100,
+      "covered_strength": 2.7777777777777777,
+      "line_counts": {
+        "missed": 0,
+        "covered": 9,
+        "total": 9
+      },
+      "name": "src/test/ts/test-utils.ts"
+    },
+    {
+      "blob_id": "cea64c427a936928d4065a8626b4450f2f5b4b35",
+      "coverage": "[2,1,1,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1.1428571428571428,
+      "line_counts": {
+        "missed": 0,
+        "covered": 7,
+        "total": 7
+      },
+      "name": "src/main/ts/index.ts"
+    },
+    {
+      "blob_id": "adadf59478da59b82aa0d7479c2d95b02b383e13",
+      "coverage": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,3,3,3,1,1,3,3,3,3,1,1,1,1,1,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1.4186046511627908,
+      "line_counts": {
+        "missed": 0,
+        "covered": 43,
+        "total": 43
+      },
+      "name": "src/main/ts/license.ts"
+    },
+    {
+      "blob_id": "d7a170ea751dcdcbd4b7e79d342e1517865f04dd",
+      "coverage": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 49,
+        "total": 49
+      },
+      "name": "target/es6/cli.mjs"
+    },
+    {
+      "blob_id": "0ce27e4639e07cf7b7a42161ab2777ba0b37dbcd",
+      "coverage": "[1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 13,
+        "total": 13
+      },
+      "name": "src/main/ts/interface.ts"
+    },
+    {
+      "blob_id": "5d038d9c2a9f70044b3aa765c485f626fe779592",
+      "coverage": "[1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 1,
+        "total": 1
+      },
+      "name": "target/es5/interface.js"
+    },
+    {
+      "blob_id": "68c322e608dc03800da47c1104944387f165d30b",
+      "coverage": "[1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 1,
+        "total": 1
+      },
+      "name": "target/es5/license.js"
+    },
+    {
+      "blob_id": "bedcdf18f30ce12b382a109d9bf8153a8305564f",
+      "coverage": "[1,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 5,
+        "total": 5
+      },
+      "name": "target/es6/interface.mjs"
+    },
+    {
+      "blob_id": "ce91c4cc1f703f8ddad2272e93a0713b4d55f5a9",
+      "coverage": "[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 31,
+        "total": 31
+      },
+      "name": "target/es6/license.mjs"
+    },
+    {
+      "blob_id": "340f33651289a9d71ae5d12ab680118314d1393f",
+      "coverage": "[1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 1,
+        "total": 1
+      },
+      "name": "target/es5/index.js"
+    }
+  ],
+  "repo_token": "e491a5b6f27269ad00d7f0c462720c841ec1dd8637e405401ab744efef1a77f9"
+}
