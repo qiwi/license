@@ -26,12 +26,12 @@ describe('index', () => {
   describe('generate', (it) => {
     it('creates / updates target file with license', () => {
       const year = '2010-2019' + Math.random()
-      const file = 'lic'
-      const type = 'mit'
+      const file = 'lic2'
+      const type = 'qosl'
       const filePath = resolve(dir, file)
 
       generate({
-        lang: TLanguage.EN,
+        lang: TLanguage.RU,
         file,
         dir,
         year,
@@ -40,8 +40,28 @@ describe('index', () => {
 
       const result = readFileSync(filePath, 'utf-8')
 
-      expect(result.includes('MIT License')).toBeTruthy()
+      expect(result.includes('ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ')).toBeTruthy()
       expect(result.includes(year)).toBeTruthy()
+    })
+
+    it('updates pkg json if found', () => {
+      const year = '2010-2019' + Math.random()
+      const file = 'lic'
+      const type = 'mit'
+      const pkgJsonPath = resolve(dir, 'package.json')
+
+      writeFileSync(pkgJsonPath, '{"name": "FOO"}', 'utf-8')
+      generate({
+        lang: TLanguage.EN,
+        file,
+        dir,
+        year,
+        type,
+        patchPkgJson: true,
+      })
+
+      const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
+      expect(pkgJson.license).toEqual('MIT')
     })
   })
 })
@@ -53,7 +73,6 @@ describe('bin', (it) => {
     const file = 'licFromCli'
     const filePath = resolve(dir, file)
     const pkgJsonPath = resolve(dir, 'package.json')
-
     const args = [
       './target/es6/cli.mjs',
       '-l', lang,
@@ -62,19 +81,17 @@ describe('bin', (it) => {
       '--year', year,
       '--patch-pkg-json=true',
     ]
-
-    writeFileSync(pkgJsonPath, '{"name": "FOO"}', 'utf-8')
-
     const cmd = `node ${args.join(' ')}`
 
+    writeFileSync(pkgJsonPath, '{"name": "FOO"}', 'utf-8')
     await exec(cmd, {env: {}})
 
     const result = readFileSync(filePath, 'utf-8')
+    const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
+
     expect(result.includes(year)).toBeTruthy()
     expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
     expect(result.includes('FOO')).toBeTruthy()
-
-    const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
     expect(pkgJson.license).toEqual('MIT')
   })
 })
