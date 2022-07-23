@@ -15,9 +15,10 @@ export const cli = meow(`
     --cwd,  -c    --dir option alias
     --name, -n    Software name
     --type, -t    License type
+    --patch-pkg-json   Update license in package.json
 
   Examples
-    $ qiwilicense --year=2020 --dir=/Users/foo/bar
+    $ qiwilicense --year=2020 --cwd=/Users/foo/bar
     $ qiwilicense -l en -f lic -n Pijma
 `, {
   // tslint:disable-next-line
@@ -49,6 +50,10 @@ export const cli = meow(`
     },
     type: {
       type: 'string',
+      alias: 't',
+    },
+    patchPkgJson: {
+      type: 'boolean',
       alias: 't',
     },
   },

@@ -1,5 +1,5 @@
 import {resolve} from 'path'
-import {readFileSync} from 'fs'
+import {readFileSync, writeFileSync} from 'fs'
 import {exec as _exec} from 'child_process'
 import {promisify} from 'util'
 import {render, generate, TLanguage} from '../../main/ts'
@@ -52,16 +52,18 @@ describe('bin', (it) => {
     const lang = TLanguage.RU
     const file = 'licFromCli'
     const filePath = resolve(dir, file)
-    const name = 'FOO'
+    const pkgJsonPath = resolve(dir, 'package.json')
 
     const args = [
       './target/es6/cli.mjs',
       '-l', lang,
-      '--dir', dir,
+      '--cwd', dir,
       `--file=${file}`,
       '--year', year,
-      '-n', name,
+      '--patch-pkg-json=true',
     ]
+
+    writeFileSync(pkgJsonPath, '{"name": "FOO"}', 'utf-8')
 
     const cmd = `node ${args.join(' ')}`
 
@@ -71,5 +73,8 @@ describe('bin', (it) => {
     expect(result.includes(year)).toBeTruthy()
     expect(result.includes('«КАК ЕСТЬ»')).toBeTruthy()
     expect(result.includes('FOO')).toBeTruthy()
+
+    const pkgJson = JSON.parse(readFileSync(pkgJsonPath, 'utf-8'))
+    expect(pkgJson.license).toEqual('MIT')
   })
 })

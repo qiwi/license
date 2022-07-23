@@ -4,11 +4,12 @@ export enum TLanguage {
 }
 
 export type IRenderOpts = {
-  lang?: TLanguage | string,
-  year?: number | string,
-  dir?: string,
-  cwd?: string,
-  file?: string,
-  name?: string,
+  lang?: TLanguage | string
+  year?: number | string
+  dir?: string
+  cwd?: string
+  file?: string
+  name?: string
   type?: string
+  patchPkgJson?: boolean
 }

@@ -46,14 +46,15 @@ generate({
 ```
 
 ## Options
-| Option                 | Description        | Default                    |
-|------------------------|--------------------|----------------------------|
-| `year`, `y`            | Sets year          | Current `.getFullYear()`   |
-| `lang`, `l`            | Text language      | `en`                       |
-| `file`, `f`            | License file name  | `LICENSE`                  |
-| `cwd`, `c`, `dir`, `d` | License target dir | `process.cwd()`            |
-| `name`, `n`            | Project name       | `name` from `package.json` |
-| `type`, `t`            | License type       | `qosl`                     |
+| Option                  | Description                                | Default                    |
+|-------------------------|--------------------------------------------|----------------------------|
+| `year`, `y`             | Sets year                                  | `new Date().getFullYear()` |
+| `lang`, `l`             | Text language                              | `en`                       |
+| `file`, `f`             | License file name                          | `LICENSE`                  |
+| `cwd`, `c`, `dir`, `d`  | License target dir                         | `process.cwd()`            |
+| `name`, `n`             | Project name                               | `name` from `package.json` |
+| `type`, `t`             | License type                               | `qosl`                     |
+| `patch-pkg-json`        | Set/update license field of `package.json` | `false`                    |
 
 ## License
 MIT
