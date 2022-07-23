@@ -1,3 +1,8 @@
+## [1.4.2](https://github.com/qiwi/license/compare/v1.4.1...v1.4.2) (2022-07-23)
+
+### Fixes & improvements
+* fix: up dev deps ([9d60a71](https://github.com/qiwi/license/commit/9d60a7196d1d19507251d4d2e5ccd3a4fba9dbd7))
+
 ## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
 
 
