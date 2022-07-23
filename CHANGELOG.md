@@ -1,3 +1,8 @@
+## [1.3.5](https://github.com/qiwi/license/compare/v1.3.4...v1.3.5) (2022-07-23)
+
+### Fixes & improvements
+* perf: tech release ([c5fc17a](https://github.com/qiwi/license/commit/c5fc17aaa9d55f62a147d11b55b24267b0cd386b))
+
 ## [1.3.3](https://github.com/qiwi/license/compare/v1.3.2...v1.3.3) (2021-12-27)
 
 
