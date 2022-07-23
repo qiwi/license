@@ -1,5 +1,6 @@
 # QIWI Open Source Software License
-[![Build Status](https://travis-ci.com/qiwi/license.svg?branch=master)](https://travis-ci.com/qiwi/license)
+
+[![CI](https://github.com/qiwi/license/actions/workflows/ci.yaml/badge.svg)](https://github.com/qiwi/license/actions/workflows/ci.yaml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/cae4d8e55c58e5cbc4b6/maintainability)](https://codeclimate.com/github/qiwi/license/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/cae4d8e55c58e5cbc4b6/test_coverage)](https://codeclimate.com/github/qiwi/license/test_coverage)
 [![npm (scoped)](https://img.shields.io/npm/v/@qiwi/license)](https://www.npmjs.com/package/@qiwi/license)
