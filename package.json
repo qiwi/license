@@ -75,7 +75,7 @@
     "eslint-config-qiwi": "^1.17.4",
     "execa": "^6.1.0",
     "microbundle": "^0.15.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.0.0",
     "terser": "^5.14.2",
     "tsc-esm-fix": "^2.20.0",
     "tsm": "^2.2.2",
