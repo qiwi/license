@@ -62,7 +62,7 @@
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^4.0.8",
+    "@qiwi/libdefkit": "^5.0.0",
     "@qiwi/substrate": "^2.0.0",
     "@types/jest": "^29.0.0",
     "@types/jest-json-schema": "^6.1.1",
