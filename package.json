@@ -72,7 +72,7 @@
     "earljs": "^0.2.3",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-qiwi": "^1.17.4",
+    "eslint-config-qiwi": "^2.0.0",
     "execa": "^6.1.0",
     "microbundle": "^0.15.0",
     "rimraf": "^3.0.2",
