@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/qiwi/license/compare/v1.4.4...v2.0.0) (2023-05-14)
+
+### Features
+* feat: update meow to v12 ([733590c](https://github.com/qiwi/license/commit/733590c3b7a1e21715a96d1ddf08e6b26ea69c4b))
+
+### BREAKING CHANGES
+* require nodejs >= 16 ([733590c](https://github.com/qiwi/license/commit/733590c3b7a1e21715a96d1ddf08e6b26ea69c4b))
+
+### Fixes & improvements
+* perf: up deps ([de65c18](https://github.com/qiwi/license/commit/de65c18d71a349605895e7ec8af259d6dfa189b2))
+
 ## [1.4.4](https://github.com/qiwi/license/compare/v1.4.3...v1.4.4) (2022-07-23)
 
 ### Fixes & improvements
