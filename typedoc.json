@@ -1,5 +1,5 @@
 {
-  "name": "protopipe",
+  "name": "license",
   "out": "./docs",
   "entryPoints": ["src/main/ts"],
   "exclude": ["src/test", "**/node_modules/**"],

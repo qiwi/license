@@ -1,7 +1,7 @@
-import {exec as _exec} from 'child_process'
-import {readFileSync, writeFileSync} from 'fs'
-import {resolve} from 'path'
-import {promisify} from 'util'
+import {exec as _exec} from 'node:child_process'
+import {readFileSync, writeFileSync} from 'node:fs'
+import {resolve} from 'node:path'
+import {promisify} from 'node:util'
 
 import {generate, render, TLanguage} from '../../main/ts'
 import {describe, expect} from './test-utils'
