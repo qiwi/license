@@ -1,6 +1,6 @@
-import {mkdirSync,readFileSync, writeFileSync} from 'fs'
+import {mkdirSync,readFileSync, writeFileSync} from 'node:fs'
+import {resolve} from 'node:path'
 import {template} from 'lodash-es'
-import {resolve} from 'path'
 
 import {
   IRenderOpts,
@@ -11,7 +11,7 @@ const readPkgPkgJson = (cwd: string = process.cwd()) => {
   try {
     return JSON.parse(readFileSync(resolve(cwd, 'package.json'), 'utf-8'))
   }
-  catch (e) {
+  catch {
     return {}
   }
 }

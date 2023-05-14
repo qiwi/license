@@ -27,35 +27,35 @@ export const cli = meow(`
   flags: {
     lang: {
       type: 'string',
-      alias: 'l',
+      shortFlag: 'l',
     },
     year: {
       type: 'string',
-      alias: 'y',
+      shortFlag: 'y',
     },
     dir: {
       type: 'string',
-      alias: 'd',
+      shortFlag: 'd',
     },
     cwd: {
       type: 'string',
-      alias: 'c',
+      shortFlag: 'c',
     },
     file: {
       type: 'string',
-      alias: 'f',
+      shortFlag: 'f',
     },
     name: {
       type: 'string',
-      alias: 'n',
+      shortFlag: 'n',
     },
     type: {
       type: 'string',
-      alias: 't',
+      shortFlag: 't',
     },
     patchPkgJson: {
       type: 'boolean',
-      alias: 't',
+      shortFlag: 't',
     },
   },
 })
