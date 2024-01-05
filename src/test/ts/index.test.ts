@@ -3,8 +3,8 @@ import {readFileSync, writeFileSync} from 'node:fs'
 import {resolve} from 'node:path'
 import {promisify} from 'node:util'
 
-import {generate, render, TLanguage} from '../../main/ts'
-import {describe, expect} from './test-utils'
+import {generate, render, TLanguage} from '../../main/ts/index.ts'
+import {describe, expect} from './test-utils.ts'
 
 const dir = resolve(__dirname, '../tmp')
 const exec = promisify(_exec)
@@ -75,7 +75,7 @@ describe('bin', (it) => {
     const filePath = resolve(dir, file)
     const pkgJsonPath = resolve(dir, 'package.json')
     const args = [
-      './target/es6/cli.mjs',
+      './target/cjs/cli.cjs',
       '-l', lang,
       '--cwd', dir,
       `--file=${file}`,

@@ -1,11 +1,16 @@
 import {mkdirSync,readFileSync, writeFileSync} from 'node:fs'
 import {resolve} from 'node:path'
+import process from 'node:process'
+import url from 'node:url'
 import {template} from 'lodash-es'
 
 import {
   IRenderOpts,
   TLanguage,
-} from './interface'
+} from './interface.ts'
+
+
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 const readPkgPkgJson = (cwd: string = process.cwd()) => {
   try {
