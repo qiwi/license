@@ -1,3 +1,8 @@
+## [2.0.3](https://github.com/qiwi/license/compare/v2.0.2...v2.0.3) (2024-01-05)
+
+### Fixes & improvements
+* perf: tech release ([24694ff](https://github.com/qiwi/license/commit/24694ff56fb3e3c70d63ccb3de5552f9ab43c3c6))
+
 ## [2.0.0](https://github.com/qiwi/license/compare/v1.4.4...v2.0.0) (2023-05-14)
 
 ### Features
