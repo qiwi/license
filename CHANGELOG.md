@@ -1,3 +1,8 @@
+## [2.0.2](https://github.com/qiwi/license/compare/v2.0.1...v2.0.2) (2024-01-05)
+
+### Fixes & improvements
+* perf: attach buildstamp ([0be9934](https://github.com/qiwi/license/commit/0be993428571b10be9ee7b813830c77e41df7fda))
+
 ## [2.0.0](https://github.com/qiwi/license/compare/v1.4.4...v2.0.0) (2023-05-14)
 
 ### Features
