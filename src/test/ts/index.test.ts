@@ -1,11 +1,13 @@
 import {exec as _exec} from 'node:child_process'
 import {readFileSync, writeFileSync} from 'node:fs'
 import {resolve} from 'node:path'
+import url from 'node:url'
 import {promisify} from 'node:util'
 
 import {generate, render, TLanguage} from '../../main/ts/index.ts'
 import {describe, expect} from './test-utils.ts'
 
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 const dir = resolve(__dirname, '../tmp')
 const exec = promisify(_exec)
 
