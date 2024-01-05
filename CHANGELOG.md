@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/qiwi/license/compare/v2.0.0...v2.0.1) (2024-01-05)
+
+### Fixes & improvements
+* perf: deps revision ([e85ab88](https://github.com/qiwi/license/commit/e85ab88583987927c6e8ef4cc0e2769c2da84e40))
+* perf: migrate to esbuild ([28cc6e7](https://github.com/qiwi/license/commit/28cc6e7ecff88d04d22c609a91a1009ea9a6aff0))
+
 ## [2.0.0](https://github.com/qiwi/license/compare/v1.4.4...v2.0.0) (2023-05-14)
 
 ### Features
