@@ -6,7 +6,7 @@ import {generate} from './license.ts'
 
 export const cli = meow(`
   Usage
-    $ qiwilicense --year=2020
+    $ qiwilicense --year=2024
 
   Options
     --year, -y    Defines license year
@@ -19,7 +19,7 @@ export const cli = meow(`
     --patch-pkg-json   Update license in package.json
 
   Examples
-    $ qiwilicense --year=2020 --cwd=/Users/foo/bar
+    $ qiwilicense --year=2024 --cwd=/Users/foo/bar
     $ qiwilicense -l en -f lic -n Pijma
 `, {
   // tslint:disable-next-line

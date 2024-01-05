@@ -23,7 +23,8 @@
     "target/cjs",
     "target/esm",
     "target/dts",
-    "target/tpl"
+    "target/tpl",
+    "buildstamp.json"
   ],
   "scripts": {
     "format": "yarn test:lint --fix",
