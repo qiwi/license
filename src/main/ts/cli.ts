@@ -2,7 +2,7 @@
 
 import meow from 'meow'
 
-import {generate} from './license'
+import {generate} from './license.ts'
 
 export const cli = meow(`
   Usage

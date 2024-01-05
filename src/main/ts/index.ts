@@ -3,5 +3,5 @@ export {
   DEFAULT_OPTS,
   render,
   loadTemplate,
-} from './license'
-export * from './interface'
+} from './license.ts'
+export * from './interface.ts'
