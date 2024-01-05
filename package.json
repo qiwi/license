@@ -8,7 +8,8 @@
   "type": "module",
   "exports": {
     "import": "./target/es6/index.mjs",
-    "require": "./target/es5/index.js"
+    "require": "./target/es5/index.js",
+    "types": "./typings/index.d.ts"
   },
   "main": "target/bundle/license.cjs",
   "module": "target/bundle/license.mjs",
